@@ -6,19 +6,18 @@ class appBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Center(
         child: CustomScrollView(
           slivers: [
             SliverAppBar(
               flexibleSpace: Container(
-                decoration:  const BoxDecoration(
+                decoration: const BoxDecoration(
                     gradient: LinearGradient(colors: [
-                      Colors.deepPurple,
-                      Colors.redAccent,
-                      Colors.brown,
-                      Colors.pinkAccent])
-                ),
+                  Colors.deepPurple,
+                  Colors.redAccent,
+                  Colors.brown,
+                  Colors.pinkAccent
+                ])),
               ),
               title: const Text(
                 'Flutter Demo',
@@ -60,25 +59,18 @@ class appBar extends StatelessWidget {
                           Icons.email,
                         ),
                       ),
-
                       IconButton(
                         onPressed: () {},
                         icon: const Icon(
                           Icons.email,
                         ),
                       ),
-
                     ],
                   ),
                 ),
               ],
             )
-
-
-
-
           ],
-
         ),
       ),
     );

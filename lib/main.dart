@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutterui/alertdialog.dart';
+import 'package:flutterui/sanckbar.dart';
 
 
-void main() => runApp(const HomePage());
+void main() => runApp( HomePage());
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -12,7 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Alert(),
+      home: Snackbar1(),
     );
   }
 }
