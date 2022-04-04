@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'flushbar.dart';
 
 class appBar extends StatelessWidget {
   const appBar({Key? key}) : super(key: key);
@@ -6,50 +7,29 @@ class appBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: CustomScrollView(
-          slivers: [
-            SliverAppBar(
-              flexibleSpace: Container(
-                decoration: const BoxDecoration(
-                    gradient: LinearGradient(colors: [
-                  Colors.deepPurple,
-                  Colors.redAccent,
-                  Colors.brown,
-                  Colors.pinkAccent
-                ])),
-              ),
-              title: const Text(
-                'Flutter Demo',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
+
+      body: Container(
+        child: Center(
+          child: CustomScrollView(
+            slivers: [
+              SliverAppBar(
+                flexibleSpace: Container(
+                  decoration: const BoxDecoration(
+                      gradient: LinearGradient(colors: [
+                    Colors.deepPurple,
+                    Colors.redAccent,
+                    Colors.brown,
+                    Colors.pinkAccent
+                  ])),
                 ),
-              ),
-              leading: Padding(
-                padding: const EdgeInsets.only(left: 1),
-                child: Row(
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.email,
-                      ),
-                    ),
-                    Expanded(
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.email,
-                        ),
-                      ),
-                    )
-                  ],
+                title: const Text(
+                  'Flutter Demo',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
+                  ),
                 ),
-              ),
-              centerTitle: true,
-              actions: [
-                Padding(
+                leading: Padding(
                   padding: const EdgeInsets.only(left: 1),
                   child: Row(
                     children: [
@@ -59,18 +39,42 @@ class appBar extends StatelessWidget {
                           Icons.email,
                         ),
                       ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.email,
+                      Expanded(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.email,
+                          ),
                         ),
-                      ),
+                      )
                     ],
                   ),
                 ),
-              ],
-            )
-          ],
+                centerTitle: true,
+                actions: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 1),
+                    child: Row(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.email,
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.email,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );

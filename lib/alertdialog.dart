@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterui/flushbar.dart';
 
 class Alert extends StatefulWidget {
   const Alert({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class _AlertState extends State<Alert> {
         child: Container(
           width: double.infinity,
           child: Center(
-            child: buildElevatedButtonalertdialog(context)
+            child:buildElevatedButtonalertdialog(context)
 
 
 
