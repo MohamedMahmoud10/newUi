@@ -5,9 +5,9 @@ import 'package:another_flushbar/flushbar_helper.dart';
 import 'package:another_flushbar/flushbar_route.dart';
 
 class FlushBar extends StatefulWidget {
- final Function ()fun ;
+ //final Function ()fun ;
 
-  FlushBar(this.fun);
+  //FlushBar(this.fun);
 
   @override
   State<FlushBar> createState() => _FlushBarState();
