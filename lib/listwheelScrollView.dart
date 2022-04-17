@@ -8,7 +8,7 @@ class ListWheel extends StatefulWidget {
 }
 
 class _ListWheelState extends State<ListWheel> {
-  List<String> monthes = [
+   static const List<String> monthes = [
     ' JANUARY',
     '2 ) FEBRUARY ',
     '3 ) MARCH',
@@ -23,9 +23,11 @@ class _ListWheelState extends State<ListWheel> {
     '12) DECEMBER',
   ];
 
-
+List<Color> colorList=List.generate(monthes.length, (index) => Colors.primaries[index]);
   @override
   Widget build(BuildContext context) {
+    int i =0 ;
+    int r=0;
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -35,8 +37,17 @@ class _ListWheelState extends State<ListWheel> {
               ...monthes.map((String name) {
                 return Container(
                   decoration: BoxDecoration(
+                    color:colorList[i++],
                      borderRadius:BorderRadius.circular(10),
-                    border: Border.all(width: 5,color: Colors.teal)
+                    border: Border.all(width: 1,color: Colors.red),
+                    boxShadow:  [
+                      BoxShadow(
+                        color: colorList[r++],
+                        blurRadius: 10,
+                        offset: const Offset(10,10)
+                      )
+
+                    ]
                   ),
                   padding: const EdgeInsets.all(15),
                   child: Center(
