@@ -1,0 +1,19 @@
+ assets:
+    - images2/R.jpg
+    - images/Games 7.jpg
+    - images/Games 16.jpg
+    - images/Games 20.jpg
+    - images/Games 27.jpg
+    - images/goodwp.com-16035.jpg
+    - images/goodwp.com-16042.jpg
+    - images/goodwp.com-16239.jpg
+
+
+    dependencies:
+      image_picker: ^0.8.5
+      marquee: ^2.2.1
+      another_flushbar: ^1.10.28
+      flutter:
+        sdk: flutter
+      fluttertoast: ^8.0.9
+      carousel_slider: ^4.0.0
